@@ -1,0 +1,63 @@
+{
+  "expo": {
+    "scheme": "bharatlearnapp",
+    "name": "bharatlearnapp",
+    "slug": "bharatlearnapp",
+    "version": "1.0.3",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#f97316"
+    },
+    "owner": "kroto",
+    "assetBundlePatterns": ["**/*"],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.kroto.bharatlearnguru",
+      "associatedDomains": ["applinks:bharatlearn.kroto.in"]
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#f97316"
+      },
+      "versionCode": 4,
+      "package": "com.kroto.bharatlearnguru",
+      "intentFilters": [
+        {
+          "action": "VIEW",
+          "autoVerify": true,
+          "data": {
+            "scheme": "https",
+            "host": "bharatlearn.kroto.in",
+            "pathPrefix": "/"
+          },
+          "category": ["BROWSABLE", "DEFAULT"]
+        }
+      ]
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      "expo-font",
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "Allow BharatLearn to access photos",
+          "cameraPermission": "Allow BharatLearn to open the camera",
+          "//": "Disables the microphone permission",
+          "microphonePermission": false
+        }
+      ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "84db51a3-e757-4035-907e-16f01362aeb6"
+      }
+    }
+  }
+}
